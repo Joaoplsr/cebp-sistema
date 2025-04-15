@@ -5,11 +5,18 @@ import ArticlesDashboard from "./views/ArticlesDashboard";
 import LoginPage from "./views/LoginPage";
 import SignUp from "./views/SignUp";
 import NotFound from "./views/NotFound";
+import VisiteNos from "./views/VisiteNos";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <PublicLayout />,
+        children: [
+            {
+                path: "/visite-nos",
+                element: <VisiteNos />
+            }
+        ]
     },
     {
         path: "/app",
