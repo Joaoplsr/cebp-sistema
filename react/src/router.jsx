@@ -23,17 +23,17 @@ const router = createBrowserRouter([
     },
 
     {
-        path: "/login",
+        path: "/login", 
         element: <LoginPage />
     },
     {
         path: "/signup",
-        element: <SignUp />
+        element: <SignUp /> 
     },
     {
         path: "*",
-        element: <NotFound />,
+        element: <NotFound />, 
     }
 ]);
 
-export default router;
+export default router; 
